@@ -8,9 +8,25 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+  　　<div class="container text-center">
+      <% #==========ここから追加する========== %>
+      <header class="row mb-3">
+        <div class="col-12">
+        </div>
+      </header>
+      <% #==========ここまで追加する========== %>
+
+      <main class="row">
+        <div class="col-8 offset-2">
+          <%= yield %>
+        </div>
+      </main>
+
+    </div>
   </body>
+
 </html>
+
